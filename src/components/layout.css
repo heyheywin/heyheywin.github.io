@@ -28,7 +28,7 @@ figure,
   display: flex;
   justify-content: center;
   height: auto 0 ;
-  width: auto 0;
+  max-width: 100%;
 }
 .bigger-content:hover,
 .my-face {
