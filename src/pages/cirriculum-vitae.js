@@ -14,7 +14,7 @@ const cv = () => (
       
       <SEO title="Cirriculum Vitae" />
       <p>Click to download the full file</p>
-      <a href="https://drive.google.com/file/d/19ed0vvZSTFcXav2MYhGF93h99N4IhQlm/view?usp=sharing" className="bigger-content" title="Click to download">
+      <a href="https://drive.google.com/file/d/19ed0vvZSTFcXav2MYhGF93h99N4IhQlm/view?usp=sharing" className="bigger-content" className="img-responsive" title="Click to download">
         <img src={CirVit}></img>
       </a>
       
