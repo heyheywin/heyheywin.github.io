@@ -27,9 +27,8 @@ figure,
 .bigger-content{
   display: flex;
   justify-content: center;
-  height: auto;
-  width: auto;
-  max-width: 100%;
+  height: auto 0 ;
+  width: auto 0;
 }
 .bigger-content:hover,
 .my-face {
