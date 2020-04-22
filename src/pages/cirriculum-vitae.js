@@ -3,8 +3,8 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import SimpleSwiper from "../components/swiper"
-import CirVit from "../images/final-cv-win.jpg"
+
+import CirVit from "../images/winfield-fan-cv"
 
 
 const cv = () => (

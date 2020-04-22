@@ -29,6 +29,7 @@ figure,
   justify-content: center;
   height: auto;
   width: auto;
+  max-width: 100%;
 }
 .bigger-content:hover,
 .my-face {
