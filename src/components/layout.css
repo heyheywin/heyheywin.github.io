@@ -1,5 +1,5 @@
 html {
-  font-family: sans-serif;
+  
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -7,14 +7,56 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #f4f4f4;
+  font-family: "Roboto" !important;
 }
 article,
 aside,
+.contact {
+  font-size: 2.5em;
+  color: none !important;
+}
 details,
 figcaption,
 figure,
-footer,
+.big-content:hover{
+  text-decoration: none;
+  opacity: 80%;
+  color: #f7a046 !important;
+}
+.bigger-content{
+  display: flex;
+  justify-content: center;
+}
+.bigger-content:hover{
+  opacity: 60%;
+  
+}
+.my-face {
+  border-radius: 100%;
+  width: 6em;
+  height: 6em;
+  margin: 1em 1em .5em 1em;
+  /* border: 5px solid #f7e4d2; */
+}
+/* footer {
+  padding-top: 1em;
+} */
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em 0em;
+}
+.links {
+  padding: 1em 0em;
+  font-weight: 500;
+}
+/* .navi {
+  display: flex;
+  justify-content: space-evenly;
+} */
 header,
+
 main,
 menu,
 nav,
@@ -42,6 +84,8 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  font-family: "Montserrat"!important;
+  
 }
 a:active,
 a:hover {
@@ -63,6 +107,7 @@ dfn {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  
 }
 mark {
   background-color: #ff0;
@@ -200,7 +245,6 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -209,6 +253,7 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
+
 img {
   max-width: 100%;
   margin-left: 0;
@@ -253,6 +298,10 @@ h2 {
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
   line-height: 1.1;
+  font-family: "Montserrrat";
+}
+h2:hover{
+  color: #f7a046 !important;
 }
 h3 {
   margin-left: 0;
@@ -270,16 +319,17 @@ h3 {
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
   line-height: 1.1;
+  font-family: "Montserrat"
 }
 h4 {
   margin-left: 0;
   margin-right: 0;
-  margin-top: 0;
+  margin-top: 1rem;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1rem;
   color: inherit;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -287,6 +337,8 @@ h4 {
   text-rendering: optimizeLegibility;
   font-size: 1rem;
   line-height: 1.1;
+  font-family: "Montserrat";
+  
 }
 h5 {
   margin-left: 0;
@@ -384,7 +436,9 @@ p {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  /* margin-bottom: 1.45rem; */
+  color: #494949;
+  font-family: "Roboto";
 }
 figure {
   margin-left: 0;
@@ -619,4 +673,25 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.watermark {
+ 
+  min-width: 100%;
+  margin-top: 4vh;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  font-weight: 700;
+  color: #007AFF;
+}
+
+#contact-link{
+  color: #262525;
 }
