@@ -27,6 +27,8 @@ figure,
 .bigger-content{
   display: flex;
   justify-content: center;
+  height: auto;
+  width: auto;
 }
 .bigger-content:hover,
 .my-face {
@@ -695,4 +697,18 @@ a:hover{
 
 #contact-link:hover{
   color: #007AFF;
+}
+
+
+.carousel-inner {
+  height:auto;
+ }
+
+.carousel .item {
+   height: auto;
+}
+
+.carousel .item img {
+   height:auto;
+
 }
