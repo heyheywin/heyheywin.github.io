@@ -3,7 +3,7 @@ import Swiper from 'react-id-swiper';
 import { faTools } from "@fortawesome/free-solid-svg-icons"
 
 import 'swiper/css/swiper.css';
-// import angelHack from '../images/angel-hack.jpg'
+import angelHack from '../images/angel-hack.jpg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
  
@@ -65,7 +65,7 @@ const SimpleSwiper = () => {
        
         <div>
             <div style={{display:`flex`, justifyContent:`center`, marginTop: ``,}}>
-                {/* <img src={angelHack} alt="slide 2"></img> */}
+                <img src={angelHack} alt="slide 2"></img>
             </div>
             
             <div style={{textAlign:`center`, padding:`2vh 0`}}>
