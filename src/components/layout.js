@@ -71,7 +71,7 @@ const Layout = ({ children }) => {
             <a href="https://www.linkedin.com/in/winfieldfan" id="contact-link"><FontAwesomeIcon icon={faLinkedin} className="contact"></FontAwesomeIcon></a>
             <a href="mailto:faefaehk@gmail.com" id="contact-link" title="faefaehk@gmail.com"><FontAwesomeIcon icon={faEnvelope} className="contact"></FontAwesomeIcon></a>
             <a href="https://github.com/heyheywin/heyheywin.github.io" id="contact-link" title="View the repository for this site"><FontAwesomeIcon icon={faGithub} className="contact"></FontAwesomeIcon></a>
-            <FontAwesomeIcon icon={faWeixin} className="contact" onClick={handleShow}></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faWeixin} className="contact" id="contact-link" onClick={handleShow}></FontAwesomeIcon>
             <Modal show={show} onHide={handleClose}>
               <Modal.Header closeButton>
                 
