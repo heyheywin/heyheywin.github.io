@@ -11,6 +11,8 @@ import useBreakpoint from '../components/breakpoint'
 
 const SecondPage = (props) => {
   const point = useBreakpoint();
+  if (window !== 'undefined'){
+  
   if (point === 'mobile') {
     return (
       <React.Fragment>
@@ -42,6 +44,7 @@ const SecondPage = (props) => {
       </React.Fragment>
     );  
   };
+}
 }
 
 

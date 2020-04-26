@@ -11,7 +11,6 @@ const getDeviceConfig = (width) => {
 };
 
 const useBreakpoint = () => {
-    if (typeof window !== 'undefined'){
         const [brkPnt, setBrkpnt] = useState(() => getDeviceConfig(window.innerWidth));
 
         useEffect(() => {
@@ -23,7 +22,7 @@ const useBreakpoint = () => {
         }, []);
     
     return brkPnt;
-    }
+    
     
             
 }
