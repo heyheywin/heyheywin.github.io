@@ -11,17 +11,20 @@ const getDeviceConfig = (width) => {
 };
 
 const useBreakpoint = () => {
-    const [brkPnt, setBrkpnt] = useState(() => getDeviceConfig(window.innerWidth));
+    if (typeof window !== 'undefined'){
+        const [brkPnt, setBrkpnt] = useState(() => getDeviceConfig(window.innerWidth));
 
-    useEffect(() => {
-        const calcInnerWidth = throttle(function() {
-            setBrkpnt(getDeviceConfig(window.innerWidth))
-        }, 200);
-        window.addEventListener('resize', calcInnerWidth);
-        return() => window.removeEventListener('resize', calcInnerWidth);
-    }, []);
+        useEffect(() => {
+            const calcInnerWidth = throttle(function() {
+                setBrkpnt(getDeviceConfig(window.innerWidth))
+            }, 200);
+            window.addEventListener('resize', calcInnerWidth);
+            return() => window.removeEventListener('resize', calcInnerWidth);
+        }, []);
     
     return brkPnt;
+    }
+    
             
 }
 
