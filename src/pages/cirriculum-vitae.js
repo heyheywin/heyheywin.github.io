@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Media from 'react-media'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,13 +9,19 @@ import CirVit from "../images/winfield-fan-cv.jpg"
 import useBreakpoint from '../components/breakpoint.js';
 
 
-const Cv = (props) => {
-  const point = useBreakpoint();
-  if (point === 'mobile'){
-    return(
-      <React.Fragment>
-    
-        <Layout>
+const Cv = () => {
+  return(
+    <div>
+            <Media queries={{
+                mobile: "(max-width: 599px)",
+                desktop: "(min-width: 600px)", 
+            }}>
+            {matches => (
+                <React.Fragment>
+                    {matches.mobile && 
+                    
+                        <React.Fragment>
+                        <Layout>
           
           <SEO title="Cirriculum Vitae" />
           <p>Click to download the full file</p>
@@ -22,12 +29,10 @@ const Cv = (props) => {
             <img src={CirVit} className="bigger-content"></img>
           </a>  
         </Layout>
-      </React.Fragment>
-    );
-  } else {
-    return (
-      <React.Fragment>
-        <div style={{display: `flex`, marginTop:`7vh`}} >
+                        </React.Fragment>}
+                    {matches.desktop &&
+                    <React.Fragment>
+                    <div style={{display: `flex`, marginTop:`7vh`}} >
           <div style={{minWidth: 350, paddingLeft: `2em`}}>
               <Layout>
               
@@ -44,13 +49,15 @@ const Cv = (props) => {
             </a>  
           </div>
         </div>
-      </React.Fragment>
-      
+                  </React.Fragment>}
+                </React.Fragment>
+            )}
+            </Media>
+        </div>
     );
- 
-  };
-  
 }
+
+// help
 
 
 
