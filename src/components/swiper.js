@@ -64,7 +64,7 @@ const SimpleSwiper = () => {
         
        
         <div>
-            <div style={{display:`flex`, justifyContent:`center`, marginTop: ``,}}>
+            <div style={{display:`flex`, justifyContent:`center`, height: `100%`}}>
                 <img src={angelHack} className="bigger-content" alt="slide 2" className="img-responsive"></img>
             </div>
             

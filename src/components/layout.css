@@ -21,8 +21,9 @@ figcaption,
 figure,
 .big-content:hover{
   text-decoration: none;
+  opacity: 60%;
   
-  color: #f7a046 !important;
+  /* color: #f7a046 !important; */
 }
 .bigger-content{
   display: flex;
@@ -30,7 +31,9 @@ figure,
   height: auto;
   
 }
-.bigger-content:hover,
+.bigger-content:hover{
+  opacity: 60%;
+}
 .my-face {
   border-radius: 100%;
   width: 6em;
@@ -38,23 +41,33 @@ figure,
   margin: 1em 1em .5em 1em;
   /* border: 5px solid #f7e4d2; */
 }
+.active {
+  font-weight: 800;
+  border-bottom: 1px solid #000;
+  padding-bottom: 3px;
+}
 /* footer {
   padding-top: 1em;
 } */
 .contact-container {
   display: flex;
   justify-content: space-around;
-  padding: 1em 0em;
+  margin-bottom: 1em;
 }
 .links {
   padding: 1em 0em;
   font-weight: 500;
+  
 }
+
 /* .navi {
   display: flex;
   justify-content: space-evenly;
 } */
-header,
+header{
+  max-width: 234.77;
+}
+
 
 main,
 menu,
@@ -677,7 +690,6 @@ pre tt:after {
 .watermark {
  
   min-width: 100%;
-  margin-top: 4vh;
   text-align: center;
 }
 
@@ -686,10 +698,24 @@ a{
   color: black;
 }
 
-a:hover{
-  font-weight: 700;
-  color: #007AFF;
+.link {
+  color: black;
 }
+
+.link:hover{
+  border-bottom: 1px solid #000;
+  padding-bottom: 3px;
+  color: black !important;
+  text-decoration: none !important;
+}
+
+
+a:hover{
+  font-weight: 800;
+  color: #007AFF;
+  
+}
+
 
 #contact-link{
   color: #262525;

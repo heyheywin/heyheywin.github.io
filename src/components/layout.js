@@ -38,33 +38,38 @@ const Layout = ({ children }) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+
   return (
     <>
       <Link to="/" className="big-content">
       <img src={face} alt="Profile Picture" className="my-face"></img>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        
+      </Link>
+      <Link to="/">
+        <Header siteTitle={data.site.siteMetadata.title} className = "link"/>
       </Link>
         
         <div
           style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0 1.0875rem 1.45rem`,
+            margin: `0px 30px`,
+            maxWidth: 300,
           }}
         >
         <main>{children}</main>
         <footer> 
+        <div style={{marginTop: `1rem`}}>
         <div className="links">
-            <Link to="/"><p style={{color:`#007AFF`, margin:`0`}}>> About me</p></Link>
+            <Link to="/landing" className = "link" activeClassName="active">About me</Link>
           </div>
           <div className="links">
-            <Link to="/project-portfolio/"><p style={{color:`#007AFF`, margin:`0`}}> > Project Portfolio</p></Link>
+            <Link to="/project-portfolio/" className = "link" activeClassName="active">Project Portfolio</Link>
           </div>
           <div className="links">
-            <Link to="/cirriculum-vitae/"><p style={{color:`#007AFF`, margin:`0`}}>> Curriculum Vitae</p></Link>
+            <Link to="/cirriculum-vitae/" className = "link" activeClassName="active">Curriculum Vitae</Link>
           </div>
           <div className="links">
-            <p style={{fontWeight: `700`}}>Contact me:</p>
+            <p style={{fontWeight: `700`, border: `1px solid black`, maxWidth:`150px`, padding:`.8em`, color: `#f7f7f7`, backgroundColor: `#111111`, display: `flex`, justifyContent:`center`, marginTop: `10vh`}}>Contact me:</p>
+          </div>
           </div>
           
           <div className="contact-container">
@@ -88,10 +93,7 @@ const Layout = ({ children }) => {
         </footer>
         
       </div>
-      <div className="watermark">
-            <p>Built on Gatsby</p>
-            <p>© {new Date().getFullYear()}</p>
-      </div>
+      
     </>
   )
 }

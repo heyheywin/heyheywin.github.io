@@ -6,14 +6,14 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
      
-      marginBottom: `1rem`,
+      marginBottom: `2rem`,
     }}
   >
     <div
       style={{
-        margin: `0 auto`,
-        // maxWidth: 960,
-        padding: ` 0 1.0875em 1.0875em 1.0875em`,
+        margin: `0 30px`,
+        maxWidth: 300,
+        
       }}
     >
       <h2 style={{ margin: 0 }}>
@@ -23,6 +23,7 @@ const Header = ({ siteTitle }) => (
             color: `#191515`,
             textDecoration: `none`,
             fontFamily: `"Monteserrat", sans-serif`,
+            
           }}
           className="big-content"
         >
