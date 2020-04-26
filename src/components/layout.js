@@ -37,6 +37,9 @@ const Layout = ({ children }) => {
   const [show, setShow] = React.useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  if (typeof window === 'undefined') {
+    global.window = {}
+  }
 
 
   return (
