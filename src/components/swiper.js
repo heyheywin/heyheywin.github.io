@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const SimpleSwiper = () => {
     const params = {
     autoplay: {
-        delay: 7000,
+        delay: 4000,
         disableOnInteraction: false
     },
       pagination: {
