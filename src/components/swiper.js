@@ -35,7 +35,7 @@ const SimpleSwiper = () => {
             </div>
             <div style={{textAlign:`center`, padding:`2vh 0`}}>
                 <h3>DianDiantou</h3>
-                <h3>（点点投)</h3>
+                <h3>（点点投）</h3>
                 <p className="swiper-text">Utilising the principles of JAMstack, the platform leverages cloud computing and APIs to provide stock portoflio management and built-in quantitative tools to Chinese outbound investors. Backend since deprecated due to costly backend outsourcing 😢 </p>
             </div>
         </div>
