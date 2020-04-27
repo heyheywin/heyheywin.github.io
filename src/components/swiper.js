@@ -9,6 +9,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
  
 const SimpleSwiper = () => {
     const params = {
+    autoplay: {
+        delay: 7000,
+        disableOnInteraction: false
+    },
       pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
@@ -23,7 +27,7 @@ const SimpleSwiper = () => {
    
     return(
       <Swiper {...params}>
-       <a href="https://diandiantou.now.sh" className="big-content" id="contact-link" title="Try it for yourself!">
+       <a href="https://diandiantou.now.sh" className="big-content" id="contact-link" title="Try it for yourself!" style={{marginTop: `2em`}}>
        <div>
             <div style={{display:`flex`, justifyContent:`center`}}>
                 <svg  width="250" height="333" viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -56,25 +60,25 @@ const SimpleSwiper = () => {
                 </svg>
             </div>
             <div style={{textAlign:`center`, padding:`2vh 0`}}>
-                <h3>DianDiantou</h3>
-                <p>Utilising the principles of JAMstack, the platform leverages cloud computing and APIs to provide stock portoflio management and built-in quantitative tools to Chinese outbound investors</p>
+                <h3>DianDiantou（点点投）</h3>
+                <p className="swiper-text">Utilising the principles of JAMstack, the platform leverages cloud computing and APIs to provide stock portoflio management and built-in quantitative tools to Chinese outbound investors. Backend since deprecated due to costly backend outsourcing 😢 </p>
             </div>
         </div>
        </a>
         
        
         <div>
-            <div style={{display:`flex`, justifyContent:`center`, height: `100%`}}>
-                <img src={angelHack} className="bigger-content" alt="slide 2" className="img-responsive"></img>
+            <div style={{display:`flex`, justifyContent:`center`}}>
+                <img src={angelHack} className="bigger-content" alt="slide 2" className="img-responsive" style={{ marginTop: `2em`}}></img>
             </div>
             
             <div style={{textAlign:`center`, padding:`2vh 0`}}>
                 <h3>AngelHack 2018</h3>
-                <p>Our product, Nurture, sought to provide a virtual pregnancy companion, using machine learning to curate advice on vitamin and food habits. Unfortunately failed to secure funding, but finished fourth overall that weekend.</p>
+                <p className="swiper-text">Our product, Nurture, sought to provide a virtual pregnancy companion, using machine learning to curate advice on vitamin and food habits. Unfortunately failed to secure funding, but finished fourth overall that weekend.</p>
             </div>
         </div>
         <div>
-            <div style={{display:`flex`, justifyContent:`center`, marginTop:`15vh`}}>
+            <div style={{display:`flex`, justifyContent:`center`, marginTop:`10vh`}}>
                 <FontAwesomeIcon icon={faTools} size="8x"></FontAwesomeIcon>
             </div>
             <div style={{textAlign:`center`, padding:`2vh 0`}}>

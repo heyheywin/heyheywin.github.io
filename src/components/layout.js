@@ -41,25 +41,25 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Link to="/" className="big-content">
-      <img src={face} alt="Profile Picture" className="my-face"></img>
+      <Link to="/" >
+      <img src={face} alt="Profile Picture" className="my-face" ></img>
         
       </Link>
-      <Link to="/">
+    
         <Header siteTitle={data.site.siteMetadata.title} className = "link"/>
-      </Link>
+      
         
         <div
           style={{
-            margin: `0px 30px`,
-            maxWidth: 300,
+           
+            width: `100%`,
           }}
         >
         <main>{children}</main>
         <footer> 
-        <div style={{marginTop: `1rem`}}>
+        <div style={{marginTop: `1rem`, paddingLeft: `2em`}}>
         <div className="links">
-            <Link to="/landing" className = "link" activeClassName="active">About me</Link>
+            <Link to="/" className = "link" activeClassName="active">About me</Link>
           </div>
           <div className="links">
             <Link to="/project-portfolio/" className = "link" activeClassName="active">Project Portfolio</Link>
@@ -68,23 +68,24 @@ const Layout = ({ children }) => {
             <Link to="/cirriculum-vitae/" className = "link" activeClassName="active">Curriculum Vitae</Link>
           </div>
           <div className="links">
-            <p style={{fontWeight: `700`, border: `1px solid black`, maxWidth:`150px`, padding:`.8em`, color: `#f7f7f7`, backgroundColor: `#111111`, display: `flex`, justifyContent:`center`, marginTop: `10vh`}}>Contact me:</p>
+            <p style={{fontWeight: `700`, border: `1px solid black`, maxWidth:`150px`, padding:`.8em`, color: `#f7f7f7`, backgroundColor: `#111111`, display: `flex`, justifyContent:`center`}}>Contact me:</p>
           </div>
           </div>
           
           <div className="contact-container">
-            <a href="https://www.linkedin.com/in/winfieldfan" id="contact-link"><FontAwesomeIcon icon={faLinkedin} className="contact"></FontAwesomeIcon></a>
-            <a href="mailto:faefaehk@gmail.com" id="contact-link" title="faefaehk@gmail.com"><FontAwesomeIcon icon={faEnvelope} className="contact"></FontAwesomeIcon></a>
-            <a href="https://github.com/heyheywin/heyheywin.github.io" id="contact-link" title="View the repository for this site"><FontAwesomeIcon icon={faGithub} className="contact"></FontAwesomeIcon></a>
+            <a href="https://www.linkedin.com/in/winfieldfan" id="contact-link"><FontAwesomeIcon icon={faLinkedin} className="contact fa"></FontAwesomeIcon></a>
+            <a href="mailto:faefaehk@gmail.com" id="contact-link" title="faefaehk@gmail.com"><FontAwesomeIcon icon={faEnvelope} className="contact fa"></FontAwesomeIcon></a>
+          </div>
+          <div className="contact-container">
+          <a href="https://github.com/heyheywin/heyheywin.github.io" id="contact-link" title="View the repository for this site"><FontAwesomeIcon icon={faGithub} className="contact"></FontAwesomeIcon></a>
             <FontAwesomeIcon icon={faWeixin} className="contact" id="contact-link" onClick={handleShow}></FontAwesomeIcon>
             <Modal show={show} onHide={handleClose}>
               <Modal.Header closeButton>
                 
-                <Modal.Body><img src={Weixin} alt="Winfield826"></img></Modal.Body>
+                <Modal.Body><img src={Weixin} alt="Winfield826" className="contact"></img></Modal.Body>
                 
               </Modal.Header>
             </Modal>
-            
           </div>
           
           

@@ -6,7 +6,7 @@ import Media from 'react-media'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import SimpleSwiper from "../components/swiper"
-import useBreakpoint from '../components/breakpoint'
+
 
 
 
@@ -22,17 +22,25 @@ const SecondPage = () => {
                 <React.Fragment>
                     {matches.mobile && 
                     
-                        <React.Fragment>
+                      <React.Fragment>
+                        
                         <Layout>
 
                         <SEO title="Project Portfolio" />
+                        <div className="main-container">
+                        <h4 style={{borderBottom: `1px solid #000`, paddingBottom: `3px`}}>Project Portfolio</h4>
                         <SimpleSwiper></SimpleSwiper>
+                        </div>
+                        
                         </Layout> 
-                        </React.Fragment>}
+                        
+                        </React.Fragment>
+                   
+                        }
                     {matches.desktop &&
                     <React.Fragment>
                     <div style={{display: `flex`, marginTop:`7vh`}} >
-                      <div style={{minWidth: 350, paddingLeft: `2em`}}>
+                      <div style={{minWidth: 350, paddingLeft: `1em`}}>
                           <Layout>
                           
                           <SEO title="Project Portfolio" />
