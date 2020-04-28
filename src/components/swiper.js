@@ -43,7 +43,7 @@ const SimpleSwiper = () => {
         
        
         <div>
-            <div style={{display:`flex`, justifyContent:`center`}}>
+            <div>
                 <img src={angelHack} className="bigger-content" alt="slide 2" className="img-responsive" style={{ marginTop: `2em`}}></img>
             </div>
             
@@ -53,7 +53,7 @@ const SimpleSwiper = () => {
             </div>
         </div>
         <div>
-            <div style={{marginTop:`8vh`}}>
+            <div style={{display:`flex`, justifyContent:`center`, marginTop:`8vh`}}>
                 <FontAwesomeIcon icon={faTools} size="8x"></FontAwesomeIcon>
             </div>
             <div style={{textAlign:`center`, padding:`2vh 0`}}>
