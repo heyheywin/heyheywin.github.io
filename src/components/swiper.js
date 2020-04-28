@@ -10,10 +10,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
  
 const SimpleSwiper = () => {
     const params = {
-    autoplay: {
-        delay: 4000,
-        disableOnInteraction: false
-    },
+    // autoplay: {
+    //     delay: 4000,
+    //     disableOnInteraction: false
+    // },
       pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
@@ -31,7 +31,7 @@ const SimpleSwiper = () => {
        <a href="https://diandiantou.now.sh" className="big-content" id="contact-link" title="Try it for yourself!" style={{marginTop: `2em`}}>
        <div>
             <div style={{display:`flex`, justifyContent:`center`}}>
-                <img src={DianDian} style={{width: `11.5em`}}></img>
+                <img src={DianDian} style={{maxWidth: `11.5em`}}></img>
             </div>
             <div style={{textAlign:`center`, padding:`2vh 0`}}>
                 <h3>DianDiantou</h3>
@@ -44,7 +44,7 @@ const SimpleSwiper = () => {
        
         <div>
             <div style={{display:`flex`, justifyContent:`center`}}>
-                <img src={angelHack} className="bigger-content" alt="slide 2" className="img-responsive" style={{ marginTop: `2em`}}></img>
+                <img src={angelHack} className="bigger-content" alt="slide 2" className="img-responsive" style={{ marginTop: `2em`, height: `100%`, width: `100%`}}></img>
             </div>
             
             <div style={{textAlign:`center`, padding:`0 0`}}>
