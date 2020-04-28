@@ -53,7 +53,7 @@ const SimpleSwiper = () => {
             </div>
         </div>
         <div>
-            <div style={{display:`flex`, justifyContent:`center`, marginTop:`8vh`}}>
+            <div style={{marginTop:`8vh`}}>
                 <FontAwesomeIcon icon={faTools} size="8x"></FontAwesomeIcon>
             </div>
             <div style={{textAlign:`center`, padding:`2vh 0`}}>
