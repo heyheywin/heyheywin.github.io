@@ -31,12 +31,12 @@ const SimpleSwiper = () => {
        <a href="https://diandiantou.now.sh" className="big-content" id="contact-link" title="Try it for yourself!" style={{marginTop: `2em`}}>
        <div>
             <div style={{display:`flex`, justifyContent:`center`}}>
-                <img src={DianDian} style={{maxWidth: `11.5em`}}></img>
+                <img src={DianDian} className="img-responsive" style={{marginTop:`2em`}}></img>
             </div>
             <div style={{textAlign:`center`, padding:`2vh 0`}}>
                 <h3>DianDiantou</h3>
                 <h3>（点点投）</h3>
-                <p className="swiper-text">Utilising the principles of JAMstack, the platform leverages cloud computing and APIs to provide stock portoflio management and built-in quantitative tools to Chinese outbound investors. Backend since deprecated due to costly backend outsourcing 😢 </p>
+                <p className="swiper-text">Built on JAMstack, BaaS, and APIs for data. Provides stock portoflio management and built-in quantitative tools to Chinese outbound investors. BaaS since deprecated. Mobile <strong>UN-</strong>friendly 😢 </p>
             </div>
         </div>
        </a>
@@ -44,12 +44,12 @@ const SimpleSwiper = () => {
        
         <div>
             <div style={{display:`flex`, justifyContent:`center`}}>
-                <img src={angelHack} className="bigger-content" alt="slide 2" className="img-responsive" style={{ marginTop: `2em`, height: `100%`, width: `100%`}}></img>
+                <img src={angelHack} className="bigger-content" alt="slide 2" className="img-responsive" style={{ marginTop: `2em`}}></img>
             </div>
             
-            <div style={{textAlign:`center`, padding:`0 0`}}>
+            <div style={{textAlign:`center`, padding:`2vh 0`}}>
                 <h3>AngelHack 2018</h3>
-                <p className="swiper-text">Our product, Nurture, sought to provide a virtual pregnancy companion, using machine learning to curate advice on vitamin and food habits. Unfortunately failed to secure funding, but finished fourth overall that weekend.</p>
+                <p className="swiper-text">We built Nurture, a virtual pregnancy companion, using ML to curate advice on vitamin and food habits. Finished fourth overall that weekend.</p>
             </div>
         </div>
         <div>
