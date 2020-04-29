@@ -43,7 +43,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-   
+    <img src={Favicon} style={{visibility: `hidden`}}></img>
       <Link to="/" >
       <img src={face} alt="Profile Picture" className="my-face" ></img>
         
