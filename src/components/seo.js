@@ -27,6 +27,10 @@ function SEO({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
 
+
+  
+
+
   return (
     <Helmet
       htmlAttributes={{
@@ -50,6 +54,10 @@ function SEO({ description, lang, meta, title }) {
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `og:image`,
+          content: `../images/favicon.png`
         },
         {
           name: `twitter:card`,

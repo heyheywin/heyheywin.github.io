@@ -3,7 +3,6 @@ module.exports = {
     title: `Winfield Fan`,
     description: `A CS portfolio for Winfield Fan`,
     author: `Winfield Fan`,
-    image: `images/favicon.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

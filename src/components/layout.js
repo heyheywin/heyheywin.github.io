@@ -14,6 +14,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { Modal } from "react-bootstrap"
 
 
+
 import Header from "./header"
 import face from "../images/face.png"
 import "./layout.css"
@@ -30,7 +31,6 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
-          image
         }
       }
     }
@@ -43,6 +43,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+
     <img src={Favicon} style={{visibility: `hidden`}}></img>
       <Link to="/" >
       <img src={face} alt="Profile Picture" className="my-face" ></img>
