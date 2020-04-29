@@ -20,6 +20,7 @@ import "./layout.css"
 import "../css/typography.css"
 import Weixin from "../images/weixin.jpg"
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Favicon from "../images/favicon.png"
 
 
 
@@ -42,6 +43,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+    <img src={Favicon} style={{visibility: `hidden`}}></img>
       <Link to="/" >
       <img src={face} alt="Profile Picture" className="my-face" ></img>
         

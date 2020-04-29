@@ -48,7 +48,7 @@ figure,
   border-radius: 100%;
   width: 6em;
   height: 6em;
-  margin: 1em 1em .5em 2em;
+  margin: 1em 1em .5em 0;
   transition: all 0.5s ease-in-out;
   /* border: 5px solid #f7e4d2; */
 }
