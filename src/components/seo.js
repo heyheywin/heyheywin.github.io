@@ -57,7 +57,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `../images/favicon.png`
+          content: `https://ibb.co/F3GG5Jv`
         },
         {
           name: `twitter:card`,
