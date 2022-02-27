@@ -21,7 +21,7 @@ import Mysql from "../images/mysql.svg"
 
 
 
-const IndexPage = () => {
+const SecondPage = () => {
   
     return (
         <div>
@@ -39,12 +39,14 @@ const IndexPage = () => {
                     <SEO title="Home" />
                         <div className="main-container" style={{width: `80%`}}>
                         <h4 style={{borderBottom: `1px solid #000`, paddingBottom: `3px`}}>Tech curious</h4>
-                       <p>Started on Ruby thanks to LeWagon <img src={LeWagon} alt='coding bootcamp' style={{height: 40}}></img> </p>
-                       <p>Expect full-stack support with a suite of languages such as Python, ReactJS, and SQL. </p>
-                       <h4 style={{borderBottom: `1px solid #000`, padding: `3px 0`}}>Avid about Law</h4>
-                       <p style={{padding:`0.5vh 0`}}>Recent Durham Law (LLB) graduate with honours</p>
-                      <p style={{padding:`0.5vh 0`}}>Practical experience in securities law with Magic Circle firm in the Asia-Pacific</p>
-                      <p style={{padding:`0.5vh 0`}}>Familiar with Land and Conveyance Law in Hong Kong</p>
+                       <p>> Self-taught developer with experience in Ruby, Python, React JS</p>
+                       <p>> Curious about new technologies that impact the way we do business</p>
+                       {/* <p>Expect full-stack support with a suite of languages such as Python, ReactJS, and SQL. </p> */}
+                       <h4 style={{borderBottom: `1px solid #000`, padding: `3px 0`}}>Tax Professional with a background in Law</h4>
+                       <p style={{padding:`0.5vh 0`}}> >Specialisation in M&A Tax and corporate tax structuring/efficiency</p>
+                       <p style={{padding:`0.5vh 0`}}>> Durham Law (LLB) graduate with honours</p>
+                      <p style={{padding:`0.5vh 0`}}>> Practical experience in Corporate IPO with Magic Circle firm in the Asia-Pacific</p>
+                      {/* <p style={{padding:`0.5vh 0`}}>Familiar with Land and Conveyance Law in Hong Kong</p> */}
                     
                         </div>
                     
@@ -63,13 +65,12 @@ const IndexPage = () => {
                       
                       <div style={{maxWidth:1000, padding: `4em 2em 2em 0em`, margin:`0 auto`, width:`0 auto`}}>
                           <h4 style={{borderBottom: `1px solid #000`, paddingBottom: `3px`}}>Tech curious</h4>
-                      <p>> Started on Ruby <img src={Ruby} alt='on rails' style={{height: 40, paddingTop: `2vh`}}></img> thanks to LeWagon <img src={LeWagon} alt='coding bootcamp' style={{height: 40}}></img> </p>
-                      <p>> I love web-development both in mobile and desktop and am not afraid to try new things!  <img src={Smile} alt='smiley' style={{height: 40}}></img></p>
-                      <p>> Expect full-stack support with a suite of languages such as Python <img src={[Python]} alt='Py' style={{height: 50, paddingTop: `3vh`}}></img>  /  ReactJS<img src={ReactLogo} alt='React' style={{height: 60, paddingTop:`3vh`}}></img> /   MySQL<img src={Mysql} alt='sql' style={{height: 40, marginBottom: `0.6em`}}></img></p>
-                      <h4 style={{borderBottom: `1px solid #000`, paddingBottom: `3px`}}>Avid student of the Law</h4>
-                      <p style={{padding:`2vh 0`}}>> Recent Durham Law (LLB) graduate with honours</p>
-                      <p style={{padding:`2vh 0`}}>> Practical experience in securities law with Magic Circle firm in the Asia-Pacific</p>
-                      <p style={{padding:`2vh 0`}}>> Familiar with Land and Conveyance Law in Hong Kong</p>
+                      <p>> Self-taught developer with experience in Ruby <img src={Ruby} alt='on rails' style={{height: 25}}></img>, Python and JS</p>
+                      <p>> Curious about new technologies that impact the way we do business in the future</p>
+                      <h4 style={{borderBottom: `1px solid #000`, paddingBottom: `3px`}}>Tax Professional with a background in Law</h4>
+                      <p style={{padding:`0.5vh 0`}}>> Specialisation in M&A Tax and corporate tax structuring/efficiency</p>
+                        <p style={{padding:`0.5vh 0`}}>> Durham Law (LLB) graduate with honours</p>
+                      <p style={{padding:`0.5vh 0`}}>> Practical experience in Corporate IPO with Magic Circle firm in the Asia-Pacific</p>
                       </div>
                     </div>
                   </React.Fragment>}
@@ -95,4 +96,4 @@ const IndexPage = () => {
   
     
 
-export default IndexPage
+export default SecondPage

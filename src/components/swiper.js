@@ -31,7 +31,7 @@ const SimpleSwiper = () => {
        <a href="https://diandiantou.now.sh" className="big-content" id="contact-link" title="Try it for yourself!" style={{marginTop: `2em`}}>
        <div>
             <div style={{display:`flex`, justifyContent:`center`}}>
-                <img src={DianDian} style={{width: `11.5em`}}></img>
+                <img src={DianDian} style={{maxWidth: `100%`}}></img>
             </div>
             <div style={{textAlign:`center`, padding:`2vh 0`}}>
                 <h3>DianDiantou</h3>

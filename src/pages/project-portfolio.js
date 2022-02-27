@@ -10,7 +10,7 @@ import SimpleSwiper from "../components/swiper"
 
 
 
-const SecondPage = () => {
+const IndexPage = () => {
   
     return (
         <div>
@@ -69,4 +69,4 @@ const SecondPage = () => {
   
     
 
-export default SecondPage
+export default IndexPage

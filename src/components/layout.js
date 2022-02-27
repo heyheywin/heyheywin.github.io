@@ -58,7 +58,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer> 
         <div style={{marginTop: `1rem`, paddingLeft: `2em`}}>
-        <div className="links">
+          <div className="links">
             <Link to="/" className = "link" activeClassName="active">About me</Link>
           </div>
           <div className="links">
